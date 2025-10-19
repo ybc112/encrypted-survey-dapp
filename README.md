@@ -1,49 +1,49 @@
 # 🔐 Encrypted Survey dApp
 
-一个基于区块链的隐私保护问卷调查平台，使用 React + Ethers.js + Solidity 构建。
+A blockchain-based privacy-preserving survey platform built with React + Ethers.js + Solidity.
 
-## 功能特性
+## Features
 
-- 🔒 **隐私保护**: 使用加密技术保护用户响应
-- 🌐 **去中心化**: 基于以太坊智能合约
-- 📊 **实时统计**: 自动聚合调查结果
-- 🎨 **现代界面**: 响应式设计，用户体验友好
+- 🔒 **Privacy Protection**: Uses encryption technology to protect user responses
+- 🌐 **Decentralized**: Based on Ethereum smart contracts
+- 📊 **Real-time Statistics**: Automatic aggregation of survey results
+- 🎨 **Modern Interface**: Responsive design with user-friendly experience
 
-## 技术栈
+## Technology Stack
 
-- **前端**: React 18, Vite, Ethers.js v6
-- **智能合约**: Solidity, Hardhat
-- **网络**: Sepolia 测试网
-- **部署**: Vercel
+- **Frontend**: React 18, Vite, Ethers.js v6
+- **Smart Contracts**: Solidity, Hardhat
+- **Network**: Sepolia Testnet
+- **Deployment**: Vercel
 
-## 本地开发
+## Local Development
 
-### 前置要求
+### Prerequisites
 
 - Node.js 16+
-- MetaMask 钱包
-- Sepolia 测试网 ETH
+- MetaMask Wallet
+- Sepolia Testnet ETH
 
-### 安装依赖
+### Install Dependencies
 
 ```bash
-# 安装项目依赖
+# Install project dependencies
 npm install
 
-# 安装前端依赖
+# Install frontend dependencies
 cd frontend
 npm install
 ```
 
-### 环境配置
+### Environment Configuration
 
-1. 复制环境变量文件：
+1. Copy environment variable files:
 ```bash
 cp .env.example .env
 cp frontend/.env.example frontend/.env
 ```
 
-2. 配置环境变量：
+2. Configure environment variables:
 ```bash
 # .env
 SEPOLIA_RPC_URL=your_sepolia_rpc_url
@@ -53,69 +53,69 @@ PRIVATE_KEY=your_private_key
 VITE_CONTRACT_ADDRESS=deployed_contract_address
 ```
 
-### 运行项目
+### Run the Project
 
 ```bash
-# 启动前端开发服务器
+# Start frontend development server
 cd frontend
 npm run dev
 ```
 
-访问 http://localhost:4002
+Visit http://localhost:4002
 
-## 智能合约
+## Smart Contract
 
-合约已部署到 Sepolia 测试网：
-- 地址: `0x20F2dbbF57d4B421dF8CEfBaC3C55e2cB5Cc2096`
-- 网络: Sepolia Testnet
+Contract deployed to Sepolia Testnet:
+- Address: `0x20F2dbbF57d4B421dF8CEfBaC3C55e2cB5Cc2096`
+- Network: Sepolia Testnet
 
-### 合约功能
+### Contract Functions
 
-- `createSurvey()`: 创建新调查
-- `addQuestion()`: 添加问题
-- `submitResponse()`: 提交响应
-- `getQuestionResult()`: 获取结果统计
+- `createSurvey()`: Create new survey
+- `addQuestion()`: Add questions
+- `submitResponse()`: Submit responses
+- `getQuestionResult()`: Get result statistics
 
-## 部署
+## Deployment
 
-### GitHub 部署
+### GitHub Deployment
 
-1. 创建 GitHub 仓库
-2. 推送代码到仓库
-3. 连接到 Vercel
+1. Create GitHub repository
+2. Push code to repository
+3. Connect to Vercel
 
-### Vercel 部署
+### Vercel Deployment
 
-1. 在 Vercel 中导入 GitHub 仓库
-2. 配置环境变量：
-   - `VITE_CONTRACT_ADDRESS`: 智能合约地址
-3. 部署完成
+1. Import GitHub repository in Vercel
+2. Configure environment variables:
+   - `VITE_CONTRACT_ADDRESS`: Smart contract address
+3. Deploy complete
 
-## 使用说明
+## Usage Instructions
 
-1. **连接钱包**: 点击"Connect Wallet"连接 MetaMask
-2. **切换网络**: 确保连接到 Sepolia 测试网
-3. **创建调查**: 填写调查信息和问题
-4. **参与调查**: 选择调查并提交响应
-5. **查看结果**: 调查结束后查看统计结果
+1. **Connect Wallet**: Click "Connect Wallet" to connect MetaMask
+2. **Switch Network**: Ensure connection to Sepolia Testnet
+3. **Create Survey**: Fill in survey information and questions
+4. **Take Survey**: Select survey and submit responses
+5. **View Results**: View statistical results after survey ends
 
-## 项目结构
+## Project Structure
 
 ```
-├── contracts/              # 智能合约
-├── frontend/               # React 前端应用
+├── contracts/              # Smart contracts
+├── frontend/               # React frontend application
 │   ├── src/
-│   │   ├── components/     # React 组件
-│   │   ├── hooks/          # 自定义 Hooks
-│   │   └── utils/          # 工具函数
-├── scripts/                # 部署脚本
-└── test/                   # 测试文件
+│   │   ├── components/     # React components
+│   │   ├── hooks/          # Custom hooks
+│   │   └── utils/          # Utility functions
+├── scripts/                # Deployment scripts
+└── test/                   # Test files
 ```
 
-## 贡献
+## Contributing
 
-欢迎提交 Issue 和 Pull Request！
+Issues and Pull Requests are welcome!
 
-## 许可证
+## License
 
 MIT License
